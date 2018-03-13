@@ -1,0 +1,10 @@
+{
+    "app": {
+        "command_character": "!",
+        "flag":
+        {
+            "start_character": "--",
+            "define_value_character": "="
+        }
+    }
+}
