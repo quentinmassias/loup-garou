@@ -3,6 +3,7 @@ require('./Module/i18n/init')();
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const config = require('./config/config');
+const hiddenConfig = require('./config/hidden-config');
 const PartyCommand = require('./Command/Werewolf/PartyCommand');
 
 bot.on('message', function (message) {
@@ -15,4 +16,4 @@ bot.on('message', function (message) {
 
 createdParties = [];
 
-bot.login('NDE5NTQ2MDM3NTk4OTQ1Mjgx.DXxs_Q.BfIYpAZrtB1LvZPthqwiPrSM7dk');
+bot.login(hiddenConfig.token);
